@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-ift5
+  name: deployment-ift4
 spec:
   replicas: 3
   selector:
     matchLabels: 
-      app: ift5
+      app: ift4
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -15,7 +15,7 @@ spec:
   template:
     metadata:
       labels:
-        app: ift5
+        app: ift4
     spec:
       containers:
         - image: ilyakuz26/ift2:v1

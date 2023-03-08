@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: replicaset-ift5
+  name: replicaset-ift4
 spec:
   replicas: 3
   selector:
     matchLabels: 
-      app: ift5
+      app: ift4
   template:
     metadata:
       labels:
-        app: ift5
+        app: ift4
     spec:
       containers:
         - image: ilyakuz26/ift2:v1
